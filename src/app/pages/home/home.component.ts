@@ -9,7 +9,9 @@ import { TranslateService } from '@ngx-translate/core';
 export class HomeComponent {
   constructor(private translate: TranslateService) {}
 
-  changeLanguage(lang: string) {
-    this.translate.use(lang);
+  changeLanguage(event: Event) {
+    const selectElement = event.target as HTMLSelectElement;
+    const selectedLanguage = selectElement.value;
+    this.translate.use(selectedLanguage);
   }
 }

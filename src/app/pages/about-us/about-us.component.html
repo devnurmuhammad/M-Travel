@@ -58,8 +58,17 @@
             </div>
             <div class="rd-navbar-aside-right">
               <div class="rd-navbar-nav-wrap">
-                <!-- RD Navbar Nav-->
+                <!-- RD Navbar Nav-->                
                 <ul class="rd-navbar-nav">
+                  <li>
+                    <div style="text-align: center; margin-top: 2px; margin-left: 230px; vertical-align: middle;">
+                      <select (change)="changeLanguage($event)">
+                        <option value="en">Eng</option>
+                        <option value="ru">Ру</option>
+                        <option value="uz">O'z</option>
+                      </select>
+                    </div>
+                  </li>
                   <li class="active">
                     <a href="/" style="cursor: pointer !important">{{'baseHome' | translate}}</a>
                   </li>

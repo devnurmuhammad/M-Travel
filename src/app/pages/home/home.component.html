@@ -106,6 +106,15 @@
                     style="color: #fff">mail&#64;demolink.org</a>
                 </li>
               </ul>
+
+              <div style="text-align: center; margin-top: 2px; margin-left: 230px;">
+                <select (change)="changeLanguage($event)">
+                  <option value="en">Eng</option>
+                  <option value="ru">Ру</option>
+                  <option value="uz">O'z</option>
+                </select>
+              </div>
+
               <ul class="list-inline">
                 <li class="list-inline-item">
                   <a class="icon novi-icon icon-sm-bigger icon-gray-1 mdi mdi-facebook" href="#"></a>
@@ -156,15 +165,8 @@
                 </ul>
               </div>
             </div>
+
             
-            <div class="language-selector">
-              <!-- <label for="language">Tilni tanlang:</label> -->
-              <select id="language" name="language">
-                  <option value="uz">O'zbek</option> 
-                  <option value="en">Ingliz</option>
-                  <option value="ru">Rus</option>
-              </select>
-          </div>
             <div class="rd-navbar-aside-right">
               <a class="button button-sm button-secondary button-nina" href="#">{{ "bookTour" | translate }}</a>
             </div>
@@ -189,7 +191,8 @@
                       <p class="text-spacing-sm">
                         {{ "home.offer" | translate }}
                       </p>
-                      <a class="button button-default-outline button-nina button-sm" href="#">{{ "learnMore" | translate }}</a>
+                      <a class="button button-default-outline button-nina button-sm" href="#">{{ "learnMore" | translate
+                        }}</a>
                     </div>
                   </div>
                 </div>
@@ -250,7 +253,7 @@
           <div class="row row-fix justify-content-sm-center justify-content-lg-end">
 
             <!-- RD Mailform-->
-            
+
           </div>
         </div>
       </div>
@@ -530,7 +533,8 @@
             </div>
           </div>
           <div class="col-12">
-            <a class="button button-secondary button-nina button-offset-lg" href="#">{{ "viewAllPosts" | translate }}</a>
+            <a class="button button-secondary button-nina button-offset-lg" href="#">{{ "viewAllPosts" | translate
+              }}</a>
           </div>
         </div>
       </div>
