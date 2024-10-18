@@ -1,3 +1,61 @@
 {
-    "HELLO": "Hello World"
+  "HELLO": "Hello World",
+  "learnMore": "Learn More",
+  "baseHome": "home",
+  "baseAbout": "About Us",
+  "baseContacts": "Contacts",
+  "viewAllTours": "View All Tours",
+  "viewAllPosts": "View All Blog Posts",
+  "allRights": "All Rights Reserved",
+  "bookTour": "Book A Tour Now",
+  "hotTours": "Hot Tours",
+  "from": "from",
+  "viewAllDest": "View All Destinations",
+  "address": "Address",
+  "phones": "Phones",
+  "hours": "Opening Hours",
+  "contactUs": "Contact Us",
+  "firstName": "First Name",
+  "last Name": "Last Name",
+  "phone": "Phone",
+  "email": "Email",
+  "message": "Message",
+  "sendMessage": "Send Message",
+  "day1": "Mon-Fri",
+  "day2": "Sat-Sun",
+  "compAddress": "A.Navoiy street, 1, 12 А",
+  
+  "home": {
+    "head": "Hundreds of Amazing Destinations",
+    "offer": "We offer a variety of destinations to travel to, ranging from exotic to some extreme ones. They include very popular countries and cities like Paris, Rio de Janeiro, Cairo and a lot of others.",
+    "bestTours": "Our Best Tours",
+    "ourServices": "Our Services",
+    "airTickets": "Air Tickets",
+    "voyages": "Voyages&Cruises",
+    "hotelBooking": "Hotel Bookings",
+    "summerTours": "Tailored Summer Tours",
+    "ticketInfo": "At our travel agency, you can book air tickets to any world destination. We also provide online ticket booking via our website in just a couple of steps.",
+    "voyageInfo": "Besides regular tours and excursions, we also offer a variety of cruises & sea voyages for different customers looking for awesome experiences.",
+    "bookingInfo": "We offer a wide selection of hotel ranging from 5-star ones to small properties located worldwide so that you could book a hotel you like.",
+    "summerTourInfo": "Our agency provides varied tours including tailored summer tours for clients who are searching for an exclusive and memorable vacation.",
+    "latestNews": "Latest News"
+
+  },
+
+  "about":{
+    "whoWe": "Who We Are",
+    "head": "hi, we are sealine",
+    "we1": "The travel agency MainTravel has been represented on the international tourism market since 2023. Over the past time, the agency has developed and successfully implemented a number of exciting group and individual tours to Uzbekistan, Kyrgyzstan, Turkmenistan, Tajikistan, Kazakhstan, Georgia, Azerbaijan, .",
+    "we2": "The company has acquired extensive experience in the tourism industry and has established time-tested partnerships with a number of tour operators in the countries of Transcaucasia, Western Europe and North America. MainTravel office - in Tashkent (Uzbekistan), provide hotel booking services and also organize tours to the countries of the Great Silk Road. ",
+    "destinations" : "Destinations",
+    "destInfo": "The company's team of professionals also organizes and services business trips in the countries of the Great Silk Road and develops exclusive tours upon request of the client.",
+    "prices": "The most affordable prices! ",
+    "favDestination": "Choose your favorite destination!",
+    "order": "Order a tour!"
+  },
+
+  "contacts":{
+    "inTouch": "Get in Touch with Us",
+    "canContact": "You can contact us any way that is convenient for you. We are available 24/7 via fax or email. You can also use a quick contact form below or visit our office personally."
   }
+}

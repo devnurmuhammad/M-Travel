@@ -1,3 +1,61 @@
 {
-    "HELLO": "Salom Dunyo"
+  "HELLO": "Salom Dunyo",
+  "learnMore": "Batafsil",
+  "baseHome": "Asosiy",
+  "baseAbout": "Biz haqimizda",
+  "baseContacts": "Bog'lanish",
+  "viewAllTours": "Barchasini ko'rish",
+  "viewAllPosts": "Barcha Blog Postlarni ko'rish",
+  "allRights": "Barcha huquqlar himoyalangan",
+  "bookTour": "Buyurtma qilish",
+  "hotTours": "Qaynoq sayohatlar",
+  "from": "dan",
+  "viewAllDest": "Barchasini ko'rish",
+  "address": "Manzil",
+  "phones": "Telefonlar",
+  "hours": "Ish soatlari",
+  "contactUs": "Biz bilan bog'laning",
+  "firstName": "Ism",
+  "last Name": "Familiya",
+  "phone": "Telefon",
+  "email": "Elektron manzil",
+  "message": "Xabar",
+  "sendMessage": "Jo'natish",
+  "day1": "Du-Juma",
+  "day2": "Shan-Yak",
+  "compAddress": "A.Navoiy ko'chasi, 1-uy, 12 A",
+
+  "home": {
+    "head": "Yuzlab ajoyib manzillar",
+    "offer": " Biz sizga sayohat qilish uchun ekzotik va ba'zi ekstremal joylardan iborat turli manzillarni taklif etamiz. Ular orasida Parij, Rio-de-Janeyro, Qohira va boshqa ko‘plab mashhur mamlakatlar va shaharlar mavjud",
+    "bestTours": "Eng yaxshi sayohatlar",
+    "ourServices": "Xizmatlar",
+    "airTickets": "Aviachiptalar",
+    "voyages": "Sayohat va kruizlar",
+    "hotelBooking": "Mehmonxona bron qilish",
+    "summerTours": "Moslashtirilgan yozgi sayohatlar",
+    "ticketInfo": "Bizning sayohat agentligimizda siz dunyodagi istalgan manzilga havo chipta rezervatsiyasini amalga oshirishingiz mumkin. Shuningdek, biz veb-saytimiz orqali faqat bir necha qadamda onlayn chipta bron qilish xizmatini ham taqdim etamiz",
+    "voyageInfo": "Biz odatiy turlar va ekskursiyalardan tashqari, ajoyib tajribalarni qidirayotgan turli mijozlar uchun turli xil kruizlar va dengiz sayohatlarini ham taklif etamiz",
+    "bookingInfo": "Biz sizga dunyo bo'ylab joylashgan 5 yulduzli mehmonxonalar va kichik joylardan iborat keng tanlovdagi mehmonxonalarni taklif etamiz, shunda siz o'zingiz yoqtirgan mehmonxonani bron qilishingiz mumkin",
+    "summerTourInfo": "Bizning agentligimiz eksklyuziv va unutilmas ta'tilni qidirayotgan mijozlar uchun moslashtirilgan yozgi turlarni o'z ichiga olgan turli xil sayohatlarni taqdim etadi",
+    "latestNews": "So'ngi yangiliklar"
+
+  },
+
+  "about":{
+    "whoWe": "Biz kimmiz",
+    "head": "Assalomu alaykum, biz sealine",
+    "we1": "Sealine sayohat agentligi 2023-yildan buyon xalqaro turizm bozorida faoliyat yuritmoqda. O'tgan vaqt davomida agentlik O'zbekiston, Qirg'iziston, Turkmaniston, Tojikiston, Qozog'iston, Gruziya, Ozarbayjon kabi qiziqarli guruh va shaxsiy turlarni ishlab chiqdi va muvaffaqiyatli amalga oshirdi.",
+    "we2": "Kompaniya turizm sohasida katta tajriba to'plagan va Transkaukaziyadagi, G'arbiy Evropadagi va Shimoliy Amerikadagi bir qator turistik operatorlar bilan vaqt sinovidan o'tgan hamkorlik aloqalarini o'rnatgan. MainTravel ofisi - Toshkentda (O'zbekiston) mehmonxona bron qilish xizmatlarini taqdim etadi va Buyuk Ipak yo'li mamlakatlariga turlar tashkil etadi.",
+    "destinations" : "Manzillar",
+    "destInfo": "Kompaniyaning professionallar jamoasi shuningdek, Buyuk Ipak yo'li mamlakatlarida biznes sayohatlarini tashkil etadi va xizmat ko'rsatadi hamda mijozning talabiga binoan eksklyuziv turlarni ishlab chiqadi.",
+    "prices": "Eng arzon narxlar!",
+    "favDestination": "O'zingizning sevimli manzilingizni tanlang!",
+    "order": "Turni buyurtma bering!"
+  },
+
+  "contacts":{
+    "inTouch": "Biz bilan bog'laning",
+    "canContact": "Siz biz bilan sizga qulay bo'lgan har qanday usulda bog'lanishingiz mumkin. Biz 24/7 faks yoki elektron pochta orqali xizmatingizdamiz. Shuningdek, quyidagi tezkor aloqa shaklidan foydalanishingiz yoki shaxsan ofisimizga tashrif buyurishingiz mumkin."
   }
+}

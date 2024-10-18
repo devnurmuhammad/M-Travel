@@ -149,15 +149,24 @@
                 <!-- RD Navbar Nav-->
                 <ul class="rd-navbar-nav">
                   <li class="active">
-                    <a href="/" style="text-decoration: underline">Home</a>
+                    <a href="/" style="text-decoration: underline">{{'baseHome' | translate}}</a>
                   </li>
-                  <li><a href="about">About Us</a></li>
-                  <li><a href="contacts">Contacts</a></li>
+                  <li><a href="about">{{'baseAbout' | translate}}</a></li>
+                  <li><a href="contacts">{{'baseContacts' | translate}}</a></li>
                 </ul>
               </div>
             </div>
+            
+            <div class="language-selector">
+              <!-- <label for="language">Tilni tanlang:</label> -->
+              <select id="language" name="language">
+                  <option value="uz">O'zbek</option> 
+                  <option value="en">Ingliz</option>
+                  <option value="ru">Rus</option>
+              </select>
+          </div>
             <div class="rd-navbar-aside-right">
-              <a class="button button-sm button-secondary button-nina" href="#">{{ "HELLO" | translate }}</a>
+              <a class="button button-sm button-secondary button-nina" href="#">{{ "bookTour" | translate }}</a>
             </div>
           </div>
         </nav>
@@ -175,15 +184,12 @@
                 <div class="container container-bigger swiper-main-section">
                   <div class="row row-fix justify-content-sm-center justify-content-md-start">
                     <div class="col-md-6 col-lg-5 col-xl-4 col-xxl-5">
-                      <h3>Hundreds of Amazing Destinations</h3>
+                      <h3>{{ "home.head" | translate }}</h3>
                       <!-- <div class="divider divider-decorate"></div> -->
                       <p class="text-spacing-sm">
-                        We offer a variety of destinations to travel to,
-                        ranging from exotic to some extreme ones. They include
-                        very popular countries and cities like Paris, Rio de
-                        Janeiro, Cairo and a lot of others.
+                        {{ "home.offer" | translate }}
                       </p>
-                      <a class="button button-default-outline button-nina button-sm" href="#">learn more</a>
+                      <a class="button button-default-outline button-nina button-sm" href="#">{{ "learnMore" | translate }}</a>
                     </div>
                   </div>
                 </div>
@@ -255,13 +261,13 @@
         <div class="row row-fix justify-content-xl-end row-30 text-center text-xl-left">
           <div class="col-xl-8">
             <div class="parallax-text-wrap">
-              <h3>Our Best Tours</h3>
-              <span class="parallax-text">Hot tours</span>
+              <h3>{{ "home.bestTours" | translate }}</h3>
+              <span class="parallax-text">{{ "hotTours" | translate }}</span>
             </div>
             <!-- <hr class="divider divider-decorate" /> -->
           </div>
           <div class="col-xl-3 text-xl-right">
-            <a class="button button-secondary button-nina" href="#">view all tours</a>
+            <a class="button button-secondary button-nina" href="#">{{ "viewAllTours" | translate }}</a>
           </div>
         </div>
         <div class="row row-50">
@@ -272,14 +278,14 @@
                   <img src="../../../assets/images/_dubai.jpg" alt="" width="570" height="370" />
                 </figure>
                 <div class="event-default-caption">
-                  <a class="button button-xs button-secondary button-nina" href="#">learn more</a>
+                  <a class="button button-xs button-secondary button-nina" href="#">{{ "learnMore" | translate }}</a>
                 </div>
               </div>
               <div class="event-default-inner">
                 <h5>
                   <a class="event-default-title" href="#">UAE, Dubai</a>
                 </h5>
-                <span class="heading-5">from $280</span>
+                <span class="heading-5">{{ "from" | translate }} $280</span>
               </div>
             </article>
           </div>
@@ -290,14 +296,14 @@
                   <img src="../../../assets/images/_istanbul.jpg" alt="" width="570" height="370" />
                 </figure>
                 <div class="event-default-caption">
-                  <a class="button button-xs button-secondary button-nina" href="#">learn more</a>
+                  <a class="button button-xs button-secondary button-nina" href="#">{{ "learnMore" | translate }}</a>
                 </div>
               </div>
               <div class="event-default-inner">
                 <h5>
                   <a class="event-default-title" href="#">Turkiye, Istanbul</a>
                 </h5>
-                <span class="heading-5">from $480</span>
+                <span class="heading-5">{{ "from" | translate }} $480</span>
               </div>
             </article>
           </div>
@@ -308,14 +314,14 @@
                   <img src="../../../assets/images/_doha.jpg" alt="" width="570" height="370" />
                 </figure>
                 <div class="event-default-caption">
-                  <a class="button button-xs button-secondary button-nina" href="#">learn more</a>
+                  <a class="button button-xs button-secondary button-nina" href="#">{{ "learnMore" | translate }}</a>
                 </div>
               </div>
               <div class="event-default-inner">
                 <h5>
                   <a class="event-default-title" href="#">Qatar, Doha</a>
                 </h5>
-                <span class="heading-5">from $350</span>
+                <span class="heading-5">{{ "from" | translate }} $350</span>
               </div>
             </article>
           </div>
@@ -326,14 +332,14 @@
                   <img src="../../../assets/images/_bangkok.jpg" alt="" width="570" height="370" />
                 </figure>
                 <div class="event-default-caption">
-                  <a class="button button-xs button-secondary button-nina" href="#">learn more</a>
+                  <a class="button button-xs button-secondary button-nina" href="#">{{ "learnMore" | translate }}</a>
                 </div>
               </div>
               <div class="event-default-inner">
                 <h5>
                   <a class="event-default-title" href="#">Tailand, Bankok</a>
                 </h5>
-                <span class="heading-5">from $350</span>
+                <span class="heading-5">{{ "from" | translate }} $350</span>
               </div>
             </article>
           </div>
@@ -344,14 +350,14 @@
                   <img src="../../../assets/images/_sharm el sheyx.jpg" alt="" width="570" height="370" />
                 </figure>
                 <div class="event-default-caption">
-                  <a class="button button-xs button-secondary button-nina" href="#">learn more</a>
+                  <a class="button button-xs button-secondary button-nina" href="#">{{ "learnMore" | translate }}</a>
                 </div>
               </div>
               <div class="event-default-inner">
                 <h5>
                   <a class="event-default-title" href="#">Egypt, Sharm El Sheikh</a>
                 </h5>
-                <span class="heading-5">from $520</span>
+                <span class="heading-5">{{ "from" | translate }} $520</span>
               </div>
             </article>
           </div>
@@ -362,14 +368,14 @@
                   <img src="../../../assets/images/_london.jpg" alt="" width="570" height="370" />
                 </figure>
                 <div class="event-default-caption">
-                  <a class="button button-xs button-secondary button-nina" href="#">learn more</a>
+                  <a class="button button-xs button-secondary button-nina" href="#">{{ "learnMore" | translate }}</a>
                 </div>
               </div>
               <div class="event-default-inner">
                 <h5>
                   <a class="event-default-title" href="#">UK, London</a>
                 </h5>
-                <span class="heading-5">from $600</span>
+                <span class="heading-5">{{ "from" | translate }} $600</span>
               </div>
             </article>
           </div>
@@ -380,54 +386,48 @@
     <!-- our advantages-->
     <section class="section section-lg bg-gray-lighter novi-background bg-cover text-center">
       <div class="container container-wide">
-        <h3>our services</h3>
+        <h3>{{ "home.ourServices" | translate }}</h3>
         <!-- <div class="divider divider-decorate"></div> -->
         <div class="row row-50 justify-content-sm-center text-left">
           <div class="col-sm-10 col-md-6 col-xl-3">
             <article class="box-minimal box-minimal-border">
               <div class="box-minimal-icon novi-icon mdi mdi-airplane"></div>
-              <p class="big box-minimal-title">Air Tickets</p>
+              <p class="big box-minimal-title">{{ "home.airTickets" | translate }}</p>
               <hr />
               <div class="box-minimal-text text-spacing-sm">
-                At our travel agency, you can book air tickets to any world
-                destination. We also provide online ticket booking via our
-                website in just a couple of steps.
+                {{ "home.ticketInfo" | translate }}
               </div>
             </article>
           </div>
           <div class="col-sm-10 col-md-6 col-xl-3">
             <article class="box-minimal box-minimal-border">
               <div class="box-minimal-icon novi-icon mdi mdi-map"></div>
-              <p class="big box-minimal-title">Voyages & Cruises</p>
+              <p class="big box-minimal-title">{{ "home.voyages" | translate }}</p>
               <hr />
               <div class="box-minimal-text text-spacing-sm">
-                Besides regular tours and excursions, we also offer a variety
-                of cruises & sea voyages for different customers looking for
-                awesome experiences.
+                {{ "home.voyageInfo" | translate }}
               </div>
             </article>
           </div>
           <div class="col-sm-10 col-md-6 col-xl-3">
             <article class="box-minimal box-minimal-border">
               <div class="box-minimal-icon novi-icon mdi mdi-city"></div>
-              <p class="big box-minimal-title">Hotel Bookings</p>
+              <p class="big box-minimal-title">{{ "home.hotelBooking" | translate }}</p>
               <hr />
               <div class="box-minimal-text text-spacing-sm">
-                We offer a wide selection of hotel ranging from 5-star ones to
-                small properties located worldwide so that you could book a
-                hotel you like.
+                {{ "home.bookingInfo" | translate }}
               </div>
             </article>
           </div>
           <div class="col-sm-10 col-md-6 col-xl-3">
             <article class="box-minimal box-minimal-border">
               <div class="box-minimal-icon novi-icon mdi mdi-beach"></div>
-              <p class="big box-minimal-title">Tailored Summer Tours</p>
+              <p class="big box-minimal-title">{{ "home.summerTours" | translate }}
+
+              </p>
               <hr />
               <div class="box-minimal-text text-spacing-sm">
-                Our agency provides varied tours including tailored summer
-                tours for clients who are searching for an exclusive and
-                memorable vacation.
+                {{ "home.summerTourInfo" | translate }}
               </div>
             </article>
           </div>
@@ -440,7 +440,7 @@
       <div class="container-wide">
         <div class="row row-50">
           <div class="col-sm-12">
-            <h3>Latest News</h3>
+            <h3>{{ "home.latestNews" | translate }}</h3>
             <div class="divider divider-decorate"></div>
             <!-- Owl Carousel-->
             <div class="owl-carousel owl-carousel-team owl-carousel-inset" data-items="1" data-md-items="2"
@@ -530,7 +530,7 @@
             </div>
           </div>
           <div class="col-12">
-            <a class="button button-secondary button-nina button-offset-lg" href="#">view all blog posts</a>
+            <a class="button button-secondary button-nina button-offset-lg" href="#">{{ "viewAllPosts" | translate }}</a>
           </div>
         </div>
       </div>
@@ -623,8 +623,7 @@
           </div>
           <div class="col-md-10 col-lg-7 col-xl-4">
             <p class="right">
-              &#169;&nbsp;<span class="copyright-year"></span> All Rights
-              Reserved.
+              &#169;&nbsp;<span class="copyright-year"></span> {{ "allRights" | translate }}
             </p>
           </div>
           <div class="col-md-10 col-lg-7 col-xl-4 text-xl-right">

@@ -61,10 +61,10 @@
                 <!-- RD Navbar Nav-->
                 <ul class="rd-navbar-nav">
                   <li class="active">
-                    <a href="/" style="cursor: pointer !important">Home</a>
+                    <a href="/" style="cursor: pointer !important">{{'baseHome' | translate}}</a>
                   </li>
-                  <li><a href="about">About Us</a></li>
-                  <li><a href="contacts">Contacts</a></li>
+                  <li><a href="about">{{'baseAbout' | translate}}</a></li>
+                  <li><a href="contacts">{{'baseContacts' | translate}}</a></li>
                 </ul>
               </div>
             </div>
@@ -77,11 +77,11 @@
             background-size: cover;
           ">
         <div class="container">
-          <p class="breadcrumbs-custom-subtitle">Who We Are</p>
-          <p class="heading-1 breadcrumbs-custom-title">About Us</p>
+          <p class="breadcrumbs-custom-subtitle">{{'about.whoWe' | translate}}</p>
+          <p class="heading-1 breadcrumbs-custom-title">{{'baseAbout' | translate}}</p>
           <ul class="breadcrumbs-custom-path">
-            <li><a href="../home/home.component.html">Home</a></li>
-            <li class="active">About Us</li>
+            <li><a href="../home/home.component.html">{{'baseHome' | translate}}</a></li>
+            <li class="active">{{'baseAbout' | translate}}</li>
           </ul>
         </div>
       </section>
@@ -92,21 +92,15 @@
         <div
           class="row row-50 justify-content-md-center align-items-lg-center justify-content-xl-between flex-lg-row-reverse">
           <div class="col-md-10 col-lg-6 col-xl-5">
-            <h3>hi, we are sealine</h3>
+            <h3>{{'about.head' | translate}}</h3>
             <div class="divider divider-decorate"></div>
             <p class="heading-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis
+              {{'about.we1' | translate}}
             </p>
             <p class="text-spacing-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-              in
+              {{'about.we2' | translate}}
             </p>
-            <a class="button button-default-outline button-nina" href="#">learn more</a>
+            <a class="button button-default-outline button-nina" href="#">{{'learnMore' | translate}}</a>
           </div>
           <div class="col-md-10 col-lg-6">
             <img src="../../../assets/images/_waterfall.jpg" alt="" width="720" height="459" />
@@ -123,12 +117,10 @@
             <article class="box-minimal">
               <div class="box-minimal-header">
                 <div class="box-minimal-icon box-minimal-icon-lg novi-icon mdi mdi mdi-airplane"></div>
-                <h6 class="box-minimal-title">Air Tickets</h6>
+                <h6 class="box-minimal-title">{{ "home.airTickets" | translate }}</h6>
               </div>
               <p>
-                At our travel agency, you can book air tickets to any world
-                destination. We also provide online ticket booking via our
-                website in just a couple of steps.
+                {{ "home.ticketInfo" | translate }}
               </p>
             </article>
           </div>
@@ -136,12 +128,10 @@
             <article class="box-minimal">
               <div class="box-minimal-header">
                 <div class="box-minimal-icon box-minimal-icon-lg novi-icon mdi mdi-map"></div>
-                <h6 class="box-minimal-title">Voyages & Cruises</h6>
+                <h6 class="box-minimal-title">{{ "home.voyages" | translate }}</h6>
               </div>
               <p>
-                Besides regular tours and excursions, we also offer a variety
-                of cruises & sea voyages for different customers looking for
-                awesome experiences.
+                {{ "home.voyageInfo" | translate }}
               </p>
             </article>
           </div>
@@ -149,12 +139,10 @@
             <article class="box-minimal">
               <div class="box-minimal-header">
                 <div class="box-minimal-icon box-minimal-icon-lg novi-icon mdi mdi-city"></div>
-                <h6 class="box-minimal-title">Hotel Bookings</h6>
+                <h6 class="box-minimal-title">{{ "home.hotelBooking" | translate }}</h6>
               </div>
               <p>
-                We offer a wide selection of hotel ranging from 5-star ones to
-                small properties located worldwide so that you could book a
-                hotel you like.
+                {{ "home.bookingInfo" | translate }}
               </p>
             </article>
           </div>
@@ -162,12 +150,10 @@
             <article class="box-minimal">
               <div class="box-minimal-header">
                 <div class="box-minimal-icon box-minimal-icon-lg novi-icon mdi mdi-beach"></div>
-                <h6 class="box-minimal-title">Tailored Summer Tours</h6>
+                <h6 class="box-minimal-title">{{ "home.summerTours" | translate }}</h6>
               </div>
               <p>
-                Our agency provides varied tours including tailored summer
-                tours for clients who are searching for an exclusive and
-                memorable vacation.
+                {{ "home.summerTourInfo" | translate }}
               </p>
             </article>
           </div>
@@ -180,12 +166,10 @@
       <div class="container container-wide">
         <div class="row row-fix row-50 justify-content-md-center">
           <div class="col-sm-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-            <h3>Destinations</h3>
+            <h3>{{ "about.destinations" | translate }}</h3>
             <div class="divider divider-decorate"></div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              {{ "about.destInfo" | translate }}
             </p>
           </div>
         </div>
@@ -269,7 +253,7 @@
             </div>
           </div>
           <div class="col-12">
-            <a class="button button-secondary button-nina" href="#">view all Destinations</a>
+            <a class="button button-secondary button-nina" href="#">{{ "viewAllDest" | translate }}</a>
           </div>
         </div>
       </div>
@@ -280,8 +264,8 @@
       <div class="container container-wide">
         <div class="box-cta-thin">
           <p class="big">
-            <strong>The most affordable prices! </strong>&nbsp;<span>Choose your favorite destination!</span>&nbsp;<a
-              class="link-bold" href="#">Order a tour! </a>
+            <strong>{{ "about.prices" | translate }} </strong>&nbsp;<span>{{ "about.favDestination" | translate }} </span>&nbsp;<a
+              class="link-bold" href="#">{{ "about.order" | translate }}</a>
           </p>
         </div>
       </div>
@@ -296,8 +280,7 @@
           </div>
           <div class="col-md-10 col-lg-7 col-xl-4">
             <p class="right">
-              &#169;&nbsp;<span class="copyright-year"></span> All Rights
-              Reserved.
+              &#169;&nbsp;<span class="copyright-year"></span>{{ "allRights" | translate }}
             </p>
           </div>
           <div class="col-md-10 col-lg-7 col-xl-4 text-xl-right">

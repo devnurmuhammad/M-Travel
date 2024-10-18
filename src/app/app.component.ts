@@ -11,7 +11,7 @@ export class AppComponent {
 
   constructor(private translate: TranslateService) {
     // Default tilni sozlash
-    this.translate.setDefaultLang('uz');
+    this.translate.setDefaultLang('ru');
   }
 
   changeLanguage(lang: string) {
