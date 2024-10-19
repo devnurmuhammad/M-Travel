@@ -98,38 +98,29 @@
                   </ul>
                 </li>
                 <li class="box-inline list-inline-item">
-                  <span class="icon novi-icon icon-md-smaller icon-secondary mdi mdi-map-marker"></span><a href="#"
-                    style="color: #fff">2130 Fulton Street, San Diego, CA 94117-1080 USA</a>
+                  <span class="icon novi-icon icon-md-smaller icon-secondary mdi mdi-map-marker"></span>
+                  <a href="#" style="color: #fff">2130 Fulton Street, San Diego, CA 94117-1080 USA</a>
                 </li>
                 <li class="box-inline list-inline-item">
-                  <span class="icon novi-icon icon-md-smaller icon-secondary mdi mdi-email"></span><a href="mailto:#"
-                    style="color: #fff">mail&#64;demolink.org</a>
+                  <span class="icon novi-icon icon-md-smaller icon-secondary mdi mdi-email"></span>
+                  <a href="mailto:#" style="color: #fff">mail&#64;demolink.org</a>
                 </li>
               </ul>
 
-              <div style="text-align: center; margin-top: 2px; margin-left: 230px;">
+              <div style="text-align: center; margin-top: 2px; margin-left: 230px; vertical-align: middle;">
                 <select (change)="changeLanguage($event)">
-                  <option value="en">Eng</option>
-                  <option value="ru">Ру</option>
-                  <option value="uz">O'z</option>
+                  <option value="en" [selected]="translate.currentLang === 'en'">Eng</option>
+                  <option value="ru" [selected]="translate.currentLang === 'ru'">Ру</option>
+                  <option value="uz" [selected]="translate.currentLang === 'uz'">O'z</option>
                 </select>
               </div>
 
               <ul class="list-inline">
                 <li class="list-inline-item">
-                  <a class="icon novi-icon icon-sm-bigger icon-gray-1 mdi mdi-facebook" href="#"></a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="icon novi-icon icon-sm-bigger icon-gray-1 mdi mdi-twitter" href="#"></a>
-                </li>
-                <li class="list-inline-item">
                   <a class="icon novi-icon icon-sm-bigger icon-gray-1 mdi mdi-instagram" href="#"></a>
                 </li>
                 <li class="list-inline-item">
-                  <a class="icon novi-icon icon-sm-bigger icon-gray-1 mdi mdi-google-plus" href="#"></a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="icon novi-icon icon-sm-bigger icon-gray-1 mdi mdi-linkedin" href="#"></a>
+                  <a class="icon novi-icon icon-sm-bigger icon-gray-1 mdi mdi-telegram" href="#"></a>
                 </li>
               </ul>
             </div>
@@ -146,24 +137,124 @@
                 <span></span>
               </button>
               <!-- RD Navbar Brand-->
-              <div class="rd-navbar-brand">
-                
-              </div>
+              <div class="rd-navbar-brand"></div>
             </div>
             <div class="rd-navbar-aside-center">
               <div class="rd-navbar-nav-wrap">
                 <!-- RD Navbar Nav-->
                 <ul class="rd-navbar-nav">
                   <li class="active">
-                    <a href="/" style="text-decoration: underline">{{'baseHome' | translate}}</a>
+                    <a href="/" style="text-decoration: underline">{{"baseHome" | translate}}</a>
                   </li>
-                  <li><a href="about">{{'baseAbout' | translate}}</a></li>
-                  <li><a href="contacts">{{'baseContacts' | translate}}</a></li>
+                  <li>
+                    <a href="about">{{ "baseAbout" | translate }}</a>
+                  </li>
+                  <li>
+                    <a href="contacts">{{ "baseContacts" | translate }}</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div *ngIf="isMenuVisible" class="menu" style="
+                    display: block;
+                    background-color: #f9f9f9;
+                    border: 1px solid #ccc;
+                    width: 200px;
+                    position: absolute;
+                    top: 50px;
+                    left: 0;
+                    z-index: 2;">
+                <ul style="display: flex; flex-direction: column; list-style: none; padding: 0; margin: 0;">
+                  <a href="/" style="padding: 10px; border-bottom: 1px solid #ccc">{{"baseHome" | translate}}</a>
+                  <a href="/about" style="padding: 10px; border-bottom: 1px solid #ccc">{{ "baseAbout" | translate
+                    }}</a>
+                  <a href="/contacts" style="padding: 10px; border-bottom: 1px solid #ccc">{{ "baseContacts" | translate
+                    }}</a>
                 </ul>
               </div>
             </div>
+            <svg (click)="toggleMenu2()" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+              style="cursor: pointer; display: none" class="tolibjonsvg2">
+              <circle cx="12" cy="5" r="2" fill="#000" />
+              <circle cx="12" cy="12" r="2" fill="#000" />
+              <circle cx="12" cy="19" r="2" fill="#000" />
+            </svg>
 
-            
+            <div *ngIf="isMenuVisible2" class="menu" style="
+                  display: block;
+                  background-color: #f9f9f9;
+                  border: 1px solid #ccc;
+                  width: 245px;
+                  position: absolute;
+                  top: 50px;
+                  right: 0;
+                  z-index: 2;
+                  padding: 10px;">
+              <ul class="list-inline">
+                <ul class="list-comma">
+                  <li>
+                    <a href="/" style="padding: 10px; border-bottom: 1px solid #ccc">{{"baseHome" | translate}}</a>
+                  </li>
+                  <li>
+                    <a href="/about" style="padding: 10px; border-bottom: 1px solid #ccc">{{ "baseAbout" | translate
+                      }}</a>
+                  </li>
+                  <li>
+                    <a href="/contacts" style="padding: 10px; border-bottom: 1px solid #ccc">{{ "baseContacts" |
+                      translate }}</a>
+                  </li>
+                </ul>
+                <li class="box-inline list-inline-item" style="
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;">
+                  <span class="icon novi-icon icon-md-smaller icon-secondary mdi mdi-phone"></span>
+                  <ul class="list-comma">
+
+                    <li>
+                      <a href="tel:#" style="color: #000; font-size: 12px">1-800-1234-567</a>
+                    </li>
+                    <li>
+                      <a href="tel:#" style="color: #000; font-size: 12px">1-800-6780-345</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="box-inline list-inline-item" style="
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      margin-top: -0px;
+                    ">
+                  <span class="icon novi-icon icon-md-smaller icon-secondary mdi mdi-map-marker"></span><a href="#"
+                    style="color: #000; font-size: 12px">2130 Fulton Street, San Diego, CA 94117-1080 USA</a>
+                </li>
+                <li class="box-inline list-inline-item" style="margin-top: -10px">
+                  <span class="icon novi-icon icon-md-smaller icon-secondary mdi mdi-email"></span><a href="mailto:#"
+                    style="color: #000">mail&#64;demolink.org</a>
+                </li>
+              </ul>
+
+              <ul class="list-inline" style="margin-top: 10px">
+                <li class="list-inline-item">
+                  <div style=" margin-top: 2px; margin-left: 23px; vertical-align: middle;">
+                    <select (change)="changeLanguage($event)">
+                      <option value="en" [selected]="translate.currentLang === 'en'">Eng</option>
+                      <option value="ru" [selected]="translate.currentLang === 'ru'">Ру</option>
+                      <option value="uz" [selected]="translate.currentLang === 'uz'">O'z</option>
+                    </select>
+                  </div>
+                </li>
+                <li class="list-inline-item">
+                  <a style="color: #000" class="icon novi-icon icon-sm-bigger icon-gray-1 mdi mdi-telegram"
+                    href="#"></a>
+                </li>
+                <li class="list-inline-item">
+                  <a style="color: #000" class="icon novi-icon icon-sm-bigger icon-gray-1 mdi mdi-instagram"
+                    href="#"></a>
+                </li>
+              </ul>
+            </div>
+
             <div class="rd-navbar-aside-right">
               <a class="button button-sm button-secondary button-nina" href="#">{{ "bookTour" | translate }}</a>
             </div>
@@ -248,9 +339,7 @@
         </div>
         <div class="container container-bigger form-request-wrap form-request-wrap-modern">
           <div class="row row-fix justify-content-sm-center justify-content-lg-end">
-
             <!-- RD Mailform-->
-
           </div>
         </div>
       </div>
@@ -267,7 +356,9 @@
             <!-- <hr class="divider divider-decorate" /> -->
           </div>
           <div class="col-xl-3 text-xl-right">
-            <a class="button button-secondary button-nina" href="#">{{ "viewAllTours" | translate }}</a>
+            <a class="button button-secondary button-nina" href="#">{{
+              "viewAllTours" | translate
+              }}</a>
           </div>
         </div>
         <div class="row row-50">
@@ -392,7 +483,9 @@
           <div class="col-sm-10 col-md-6 col-xl-3">
             <article class="box-minimal box-minimal-border">
               <div class="box-minimal-icon novi-icon mdi mdi-airplane"></div>
-              <p class="big box-minimal-title">{{ "home.airTickets" | translate }}</p>
+              <p class="big box-minimal-title">
+                {{ "home.airTickets" | translate }}
+              </p>
               <hr />
               <div class="box-minimal-text text-spacing-sm">
                 {{ "home.ticketInfo" | translate }}
@@ -402,7 +495,9 @@
           <div class="col-sm-10 col-md-6 col-xl-3">
             <article class="box-minimal box-minimal-border">
               <div class="box-minimal-icon novi-icon mdi mdi-map"></div>
-              <p class="big box-minimal-title">{{ "home.voyages" | translate }}</p>
+              <p class="big box-minimal-title">
+                {{ "home.voyages" | translate }}
+              </p>
               <hr />
               <div class="box-minimal-text text-spacing-sm">
                 {{ "home.voyageInfo" | translate }}
@@ -412,7 +507,9 @@
           <div class="col-sm-10 col-md-6 col-xl-3">
             <article class="box-minimal box-minimal-border">
               <div class="box-minimal-icon novi-icon mdi mdi-city"></div>
-              <p class="big box-minimal-title">{{ "home.hotelBooking" | translate }}</p>
+              <p class="big box-minimal-title">
+                {{ "home.hotelBooking" | translate }}
+              </p>
               <hr />
               <div class="box-minimal-text text-spacing-sm">
                 {{ "home.bookingInfo" | translate }}
@@ -422,8 +519,8 @@
           <div class="col-sm-10 col-md-6 col-xl-3">
             <article class="box-minimal box-minimal-border">
               <div class="box-minimal-icon novi-icon mdi mdi-beach"></div>
-              <p class="big box-minimal-title">{{ "home.summerTours" | translate }}
-
+              <p class="big box-minimal-title">
+                {{ "home.summerTours" | translate }}
               </p>
               <hr />
               <div class="box-minimal-text text-spacing-sm">
@@ -618,10 +715,10 @@
     <footer class="section page-footer page-footer-minimal novi-background bg-cover text-center bg-gray-darker">
       <div class="container container-wide">
         <div class="row row-fix justify-content-sm-center align-items-md-center row-30">
-          
           <div class="col-md-10 col-lg-7 col-xl-4">
             <p class="right">
-              &#169;&nbsp;<span class="copyright-year"></span> {{ "allRights" | translate }}
+              &#169;&nbsp;<span class="copyright-year"></span>
+              {{ "allRights" | translate }}
             </p>
           </div>
           <div class="col-md-10 col-lg-7 col-xl-4 text-xl-right">

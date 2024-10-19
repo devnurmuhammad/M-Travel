@@ -16026,7 +16026,7 @@ html.tablet .ui-to-top {
   /* .swiper-slide:before {
     display: none;
   }*/
-} 
+}
 
 /* a11y */
 .swiper-container .swiper-notification {
@@ -20205,6 +20205,25 @@ html[dir="rtl"] .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
   background-size: cover;
 }
 
+@media screen and (max-width: 991px) {
+  .rd-navbar-top-panel-inner,
+  .rd-navbar-nav-wrap,
+  .rd-navbar-panel,
+  .rd-navbar-aside-right {
+    display: none !important;
+  }
+
+  .tolibjonsvg1,
+  .tolibjonsvg2,
+  .birnavlogo {
+    display: inline !important;
+  }
+
+  .rd-navbar-inner {
+    display: flex;
+  }
+}
+
 /*-------------*/
 
 /* body {
@@ -20227,4 +20246,4 @@ html[dir="rtl"] .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
 .language-selector select {
   padding: 5px;
   font-size: 16px;
-} 
+}

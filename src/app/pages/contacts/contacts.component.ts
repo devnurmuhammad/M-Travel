@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -6,12 +6,18 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: './contacts.component.html',
   styleUrl: './contacts.component.css'
 })
-export class ContactsComponent {
-  constructor(private translate: TranslateService) {}
+export class ContactsComponent implements OnInit {
+  constructor(public translate: TranslateService) {}
 
-  changeLanguage(event: Event) {
-    const selectElement = event.target as HTMLSelectElement;
-    const selectedLanguage = selectElement.value;
-    this.translate.use(selectedLanguage);
+  ngOnInit(): void {
+    const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+    this.translate.use(savedLanguage); 
+  }
+
+  changeLanguage(event: Event): void {
+    const selectElement = event.target as HTMLSelectElement | null;
+    const selectedLanguage = selectElement?.value || 'en'; 
+    this.translate.use(selectedLanguage); // Tilni o'zgartirish
+    localStorage.setItem('selectedLanguage', selectedLanguage); 
   }
 }
