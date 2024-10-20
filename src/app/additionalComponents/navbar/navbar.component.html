@@ -1,0 +1,24 @@
+<nav id="my-first" style="background-color: transparent;">
+    <ul >
+      <li class="logotype">
+        <!-- <a href="#">Logotype</a> -->
+      </li>
+      <li class="burger" (click)="toggleMenu()">
+        <i class="material-icons" >{{ isMenuOpen ? "close" : "menu" }}</i>
+      </li>
+      <li class="menu" [class.is-open]="isMenuOpen">
+        <!-- <li> -->
+          <a href="/home" class="menu-item">{{'baseHome' | translate}}</a>
+          <a href="/about" class="menu-item">{{'baseAbout' | translate}}</a>
+          <a href="/contacts" class="menu-item">{{'baseContacts' | translate}}</a>
+          <div style="margin-top: 2px; margin: 0 0 0px 0px;">
+            <select (change)="changeLanguage($event)" style="border: 0;">
+              <option value="en" [selected]="translate.currentLang === 'en'">Eng</option>
+              <option value="ru" [selected]="translate.currentLang === 'ru'">Ру</option>
+              <option value="uz" [selected]="translate.currentLang === 'uz'">O'z</option>
+            </select>
+          </div>
+        <!-- </li> -->
+      </li>
+    </ul>
+  </nav>

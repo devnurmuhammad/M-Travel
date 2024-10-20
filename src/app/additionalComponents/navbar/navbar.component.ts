@@ -2,18 +2,19 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-about-us',
-  templateUrl: './about-us.component.html',
-  styleUrl: './about-us.component.css'
+  selector: 'app-navbar',
+  templateUrl: './navbar.component.html',
+  styleUrl: './navbar.component.css'
 })
-export class AboutUsComponent implements OnInit {
-  constructor(public translate: TranslateService) {}
 
+export class NavbarComponent implements OnInit{
+  constructor(public translate: TranslateService) {} 
+  
   ngOnInit(): void {
     const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
-    this.translate.use(savedLanguage); // Saqlangan tilni tiklash
+    this.translate.use(savedLanguage); 
   }
-
+  
   changeLanguage(event: Event): void {
     const selectElement = event.target as HTMLSelectElement | null;
     const selectedLanguage = selectElement?.value || 'en'; 
@@ -21,9 +22,9 @@ export class AboutUsComponent implements OnInit {
     localStorage.setItem('selectedLanguage', selectedLanguage); 
   }
 
-  menuOpen: boolean = false;
+  isMenuOpen = false;
 
-  toggleMenu() {
-    this.menuOpen = !this.menuOpen;
+  toggleMenu(): void{
+    this.isMenuOpen = !this.isMenuOpen;
   }
 }

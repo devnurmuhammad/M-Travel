@@ -19,5 +19,5 @@ export class ContactsComponent implements OnInit {
     const selectedLanguage = selectElement?.value || 'en'; 
     this.translate.use(selectedLanguage); // Tilni o'zgartirish
     localStorage.setItem('selectedLanguage', selectedLanguage); 
-  }
+  }  
 }
