@@ -23,7 +23,7 @@
   "sendMessage": "Jo'natish",
   "day1": "Du-Juma",
   "day2": "Shan-Yak",
-  "compAddress": "A.Navoiy ko'chasi, 1-uy, 12 A",
+  "compAddress": "Kichik halqa yo'li, 84",
 
   "home": {
     "head": "Yuzlab ajoyib manzillar",
@@ -44,8 +44,8 @@
 
   "about":{
     "whoWe": "Biz kimmiz",
-    "head": "Assalomu alaykum, biz sealine",
-    "we1": "Sealine sayohat agentligi 2023-yildan buyon xalqaro turizm bozorida faoliyat yuritmoqda. O'tgan vaqt davomida agentlik O'zbekiston, Qirg'iziston, Turkmaniston, Tojikiston, Qozog'iston, Gruziya, Ozarbayjon kabi qiziqarli guruh va shaxsiy turlarni ishlab chiqdi va muvaffaqiyatli amalga oshirdi.",
+    "head": "Assalomu alaykum, biz Memory Travel",
+    "we1": "Memory Travel sayohat agentligi 2023-yildan buyon xalqaro turizm bozorida faoliyat yuritmoqda. O'tgan vaqt davomida agentlik O'zbekiston, Qirg'iziston, Turkmaniston, Tojikiston, Qozog'iston, Gruziya, Ozarbayjon kabi qiziqarli guruh va shaxsiy turlarni ishlab chiqdi va muvaffaqiyatli amalga oshirdi.",
     "we2": "Kompaniya turizm sohasida katta tajriba to'plagan va Transkaukaziyadagi, G'arbiy Evropadagi va Shimoliy Amerikadagi bir qator turistik operatorlar bilan vaqt sinovidan o'tgan hamkorlik aloqalarini o'rnatgan. MainTravel ofisi - Toshkentda (O'zbekiston) mehmonxona bron qilish xizmatlarini taqdim etadi va Buyuk Ipak yo'li mamlakatlariga turlar tashkil etadi.",
     "destinations" : "Manzillar",
     "destInfo": "Kompaniyaning professionallar jamoasi shuningdek, Buyuk Ipak yo'li mamlakatlarida biznes sayohatlarini tashkil etadi va xizmat ko'rsatadi hamda mijozning talabiga binoan eksklyuziv turlarni ishlab chiqadi.",
