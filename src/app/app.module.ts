@@ -5,10 +5,10 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './pages/home/home.component';
+import { ContactsComponent } from './pages/contacts/contacts.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { NavbarModule } from './additionalComponents/navbar/navbar.module';
-import { HomeComponent } from './components/home/home.component';
-import { AboutUsComponent } from './components/about-us/about-us.component';
-import { ContactsComponent } from './components/contacts/contacts.component';
 
 // Loader uchun funksiya
 export function HttpLoaderFactory(http: HttpClient) {
